@@ -4,11 +4,11 @@ const app = new Koa();
 
 const about = ctx => {
   ctx.response.type = 'html';
-  ctx.response.body = '<a href="/">Index Page</a>';
+  ctx.response.body = '<a href="/">Test Index Page</a>';
 };
 
 const main = ctx => {
-  ctx.response.body = 'Hello World';
+  ctx.response.body = 'Hello World ... thanks to index page';
 };
 
 app.use(route.get('/', main));
