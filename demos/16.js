@@ -7,7 +7,7 @@ const handler = async (ctx, next) => {
   } catch (err) {
     ctx.response.status = err.statusCode || err.status || 500;
     ctx.response.body = {
-      message: err.message
+      message: "or write your own error messages"
     };
   }
 };
